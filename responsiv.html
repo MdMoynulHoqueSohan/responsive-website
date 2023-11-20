@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Responsive</title>
+    <style>
+        body{
+            max-width: 800px;
+            border: 2px solid green;
+            margin: 0px auto;
+        }
+        .heading-font{
+            font-size: 7vw;
+        }
+        .food-images img{
+            width: 100%;
+        }
+        .container{
+            display: flex;
+        }
+        .container .split{
+            width: 50%;
+        }
+        .split img{
+            width: 100%;
+        }
+        @media screen and (max-width: 576px) {
+            .container{
+                flex-direction: column-reverse;
+            } 
+            .container .split{
+            width: 100%;
+        }
+        }
+    </style>
+ </head>
+
+ <body>
+    <section class="heading-font">
+        <h1>This Is My Responsive Website</h1>
+    </section>
+    <section class="food-images">
+        <img src="food-big-one.jpg" alt="">
+    </section>
+    <section>
+        <h1>Splite two parts</h1>
+        <div class="container">
+            <div class="split">
+                <img src="food-small.jpg" alt="">
+            </div>
+            <div class="split">
+                <img src="food-big-one.jpg" alt="">
+            </div>
+        </div>
+    </section>
+ </body>
+ </html>
